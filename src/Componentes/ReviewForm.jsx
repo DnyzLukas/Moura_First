@@ -1,10 +1,10 @@
-
 import {
   BsFillTrash3Fill,
-  BsSlashSquareFill ,
+  BsSlashSquareFill,
   BsClipboard2Fill,
   BsArrowUpLeftSquareFill,
-} from "React-icons/bs";
+} 
+from "react-icons/bs";
 
 import "./ReviewForm.css";
 
