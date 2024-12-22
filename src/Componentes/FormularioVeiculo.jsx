@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 
-function Formulario() {
+function FormularioVeiculo() {
   const [formData, setFormData] = useState({
     nome: "",
     veiculo: "",
-    km: "",
-    origem: "",
-    destino: "",
-    material: "",
-  });  
+    quilometragem: "",
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,7 +15,7 @@ function Formulario() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const url = "https://script.google.com/macros/s/AKfycbwgB_H8-DFjQtoveX6vBloF0_JsBZPqunOUJ9yWZCDd1nQH3Q7isyTqz_T0JXhrxUsE/exec"; // Substitua pelo URL do script do Google Sheets
+    const url = "COLOQUE_AQUI_O_URL_DO_APLICATIVO_WEB_DO_GOOGLE_SHEETS"; // Substitua pelo URL do Google Apps Script
 
     try {
       const response = await fetch(url, {
@@ -42,7 +39,8 @@ function Formulario() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ maxWidth: "400px", margin: "0 auto" }}>
+      <h2>Identificação</h2>
       <div>
         <label>Nome:</label>
         <input
@@ -50,28 +48,35 @@ function Formulario() {
           name="nome"
           value={formData.nome}
           onChange={handleChange}
+          placeholder="Digite seu nome"
+          required
         />
       </div>
       <div>
-        <label>Veiculo:</label>
+        <label>Veículo:</label>
         <input
           type="text"
           name="veiculo"
           value={formData.veiculo}
           onChange={handleChange}
+          placeholder="Digite a placa do veículo"
+          required
         />
       </div>
       <div>
-        <label>Km:</label>
-        <textarea
-          name="Km"
-          value={formData.km}
+        <label>Quilometragem:</label>
+        <input
+          type="number"
+          name="quilometragem"
+          value={formData.quilometragem}
           onChange={handleChange}
+          placeholder="Digite o Km do veículo"
+          required
         />
       </div>
-      <button type="submit">Enviar</button>
+      <button type="submit">Avançar</button>
     </form>
   );
 }
 
-export default Formulario;
+export default FormularioVeiculo;
