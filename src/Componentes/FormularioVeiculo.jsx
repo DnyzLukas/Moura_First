@@ -15,7 +15,7 @@ function FormularioVeiculo() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const url = "https://script.google.com/macros/s/AKfycbwWtKOwkbBkFVy1DGgmri2RLxFrEBEABq9HFt6HbSAwf1eH_rWpd3QLbguRoy1HzCl0/exec"; // Substitua pelo URL do Google Apps Script
+    const url = "https://script.google.com/macros/s/AKfycbwWtKOwkbBkFVy1DGgmri2RLxFrEBEABq9HFt6HbSAwf1eH_rWpd3QLbguRoy1HzCl0/exec "; // Substitua pelo URL do Google Apps Script
 
     try {
       const response = await fetch(url, {

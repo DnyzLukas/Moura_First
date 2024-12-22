@@ -11,7 +11,7 @@ import Steps from "./Componentes/Steps";
 
 import "./App.css";
 
-import FormularioVeiculo from "./Componentes\FormularioVeiculo.jsx";
+import FormularioVeiculo from "./Componentes/FormularioVeiculo.jsx";
 
 function App() {
   return (
