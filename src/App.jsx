@@ -11,12 +11,12 @@ import Steps from "./Componentes/Steps";
 
 import "./App.css";
 
-import FormularioVeiculo from "./Componentes\script.jsx";
+import Script from "./Componentes\Script.jsx";
 
 function App() {
   return (
     <div className="App">
-      <FormularioVeiculo />
+      <Script />
     </div>
   );
 }
