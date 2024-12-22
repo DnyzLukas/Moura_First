@@ -11,6 +11,16 @@ import Steps from "./Componentes/Steps";
 
 import "./App.css";
 
+import FormularioVeiculo from "./Componentes\script.jsx";
+
+function App() {
+  return (
+    <div className="App">
+      <FormularioVeiculo />
+    </div>
+  );
+}
+
 const formTemplate= {
   name:"",
   email: "",
