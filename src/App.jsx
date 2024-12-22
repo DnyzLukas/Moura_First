@@ -29,7 +29,7 @@ const formTemplate= {
 };
 
 
-function App() {
+function App2() {
 
   const [data, setData] = useState(formTemplate);
 
@@ -82,4 +82,4 @@ function App() {
   )
 };
 
-export default App;
+export default App2;
