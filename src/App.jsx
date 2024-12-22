@@ -9,7 +9,7 @@ import { useForm } from "./hooks/useForm";
 import {useState} from "react";
 import Steps from "./Componentes/Steps";
 
-import "./App.css";
+
 
 import FormularioVeiculo from "./Componentes/FormularioVeiculo.jsx";
 
